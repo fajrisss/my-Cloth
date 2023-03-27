@@ -1,0 +1,135 @@
+.baby_container{
+  background-color: var(--color-bg1);
+  padding-bottom: 3rem;
+}
+
+.baby_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.kids{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--color-bg2);
+  padding-bottom: 2rem;
+  box-shadow: -5px 7px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.kids_img>img{
+  width: 300px;
+}
+
+.kids_text>h1{
+  margin-bottom: 1.5rem;
+}
+
+.kids_text>a{
+  background-color: var(--color-orange);
+  padding: 0.2rem 1rem;
+  color: white;
+  font-weight: 500;
+  border-radius: 2rem;
+  box-shadow: 3px 2px black;
+}
+
+.top_container{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite_content{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 25%;
+  margin-top: 20px;
+}
+
+.favorite_content>a{
+  background-color: var(--color-orange);
+  font-size: 32px;
+  border-radius: 50%;
+  padding:  4px 12px;
+  box-shadow: -5px -5px;
+}
+
+.top_content{
+  border: 1px solid rgba(255, 143, 143, 0.5);
+  padding: 40px 20px;
+  border-radius: 1.2rem;
+}
+
+.top_content>img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  box-shadow: -10px -8px;
+}
+
+.top_content>img:hover{
+  box-shadow: 10px 8px;
+  transition: var(--transition);
+}
+
+.item_detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_detail>a{
+  background-color: white;
+  padding: 3px 9px;
+  padding-top: 6px;
+  color: var(--color-orange);
+  border-radius: 50%;
+}
+
+.item_detail>a:hover{
+  background-color: var(--color-orange);
+  color: white;
+  transition: var(--transition);
+}
+
+.item_price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.item_price>p{
+  color: rgb(187, 0, 0);
+}
+
+
+@media screen and (max-width: 600px) {
+  .kids{
+    flex-direction: column-reverse;
+  }
+
+  .kids_img>img{
+    width: 250px;
+  }
+
+  .favorite_content{
+    padding-left: 0%;
+    gap: 15px;
+  }
+
+  .top_container{
+    flex-direction: column;
+  }
+
+}

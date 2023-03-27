@@ -1,0 +1,59 @@
+.nav_container{
+  background-color: var(--color-bg1);
+}
+
+.nav_content{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.nav_logo>h4{
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.logo_span{
+  font-weight: 700;
+}
+
+.nav_links{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav_login{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_login>a{
+  padding: 0.2rem 1.5rem;
+  font-weight: 700;
+}
+
+.logIn{
+  background-color: var(--color-orange);
+  border-radius: 2rem;
+  border: 1px solid black;
+  box-shadow: 9px 5px black;
+}
+
+.logIn:hover{
+  background-color: black;
+  color: var(--color-bg1);
+  border-color: var(--color-orange);
+  box-shadow: 9px 5px var(--color-orange);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+ .nav_links, .signUp{
+  display: none;
+ }
+
+ 
+
+}

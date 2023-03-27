@@ -1,0 +1,29 @@
+.category_container{
+  background-color: var(--color-bg2);
+}
+
+.category_content{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.jenis_item{
+  font-size: 22px;
+}
+
+.jenis_item>p>a:hover{
+  color: var(--color-orange);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+  .category_content{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+}

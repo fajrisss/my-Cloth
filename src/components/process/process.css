@@ -1,0 +1,46 @@
+.proces_container{
+  background-color: var(--color-bg2);
+  padding: 3rem 0;
+}
+
+.proces_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.proces{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+.process_icon{
+  font-size: 60px;
+  padding: 10px;
+  border: 1px solid rgba(255, 143, 143, 0.7);
+}
+
+.arrow_proces{
+  font-size: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .proces{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .arrow_proces{
+    transform: rotate(90deg);
+  }
+}
